@@ -11,7 +11,7 @@ const createServer = () => {
   app.use(cors());
   app.use(express.json());
   app.disable('x-powered-by');
-  app.use('/', rootRoute);
+  app.use('/', rootRoute);//Este define todas las rutas, lo que en Web sería el PHP. 
   app.use(expressNotFound);
   app.use(errorHandler);
   return app;
